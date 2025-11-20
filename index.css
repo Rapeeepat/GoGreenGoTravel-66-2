@@ -1,0 +1,254 @@
+/* -------------------------------------- */
+/* 0. Global Variables (Custom Properties) */
+/* -------------------------------------- */
+
+:root {
+    --color-primary-green: #28a745; /* เขียวเข้ม (Navbar, Success) */
+    --color-dark-green: #1e7e34; /* เขียวเข้มกว่า (Border) */
+    --color-highlight-yellow: #ffc107; /* เหลืองทอง (Hover) */
+    --color-info-blue: #17a2b8; /* ฟ้า Info */
+    --color-warning-orange: #ffc107; /* เหลือง Warning */
+    --color-secondary-gray: #6c757d; /* เทา Secondary */
+    --color-text-light: #555; /* สีข้อความปกติ */
+    --color-text-white: #ffffff;
+}
+
+/* -------------------------------------- */
+/* 1. Global Styles & Navbar Customization */
+/* -------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Kanit", sans-serif;
+    padding-top: 56px; 
+}
+
+/* ปรับแต่ง Navbar  */
+.navbar-custom {
+    background-color: #28a745;
+    border-bottom: 3px solid #1e7e34;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: var(--color-text-white);
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffc107;
+}
+
+/* -------------------------------------- */
+/* 2. Carousel (Hero Section) Styling */
+/* -------------------------------------- */
+
+#slider {
+    padding: 0;
+    margin-top: 0;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 400px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+/* เพิ่มชั้นสีดำกึ่งโปร่งใส (Overlay) เพื่อให้ข้อความอ่านง่ายขึ้น */
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* ตำแหน่งข้อความ (Caption) */
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+    text-align: left;
+    max-width: 80%;
+    margin-left: 10%;
+    color: #fff;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* กำหนดรูปภาพพื้นหลังสำหรับแต่ละ Slide */
+.carousel-image-1 { background-image: url('https://mpics.mgronline.com/pics/Images/566000000909604.JPEG'); }
+.carousel-image-2 { background-image: url('https://image-tc.galaxy.tf/wijpeg-sxrfid5inslt46adwg0pwpho/intanon_standard.jpg?crop=112%2C0%2C1777%2C1333'); }
+.carousel-image-3 { background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c2/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%882.jpg'); }
+.carousel-image-4 { background-image: url('https://hotelandresortthailand.com/read/wp-content/uploads/2019/05/shutterstock_748055071-800x534.jpg'); }
+.carousel-image-5 { background-image: url('https://kanchanaburi.center/wp-content/uploads/2022/09/E9590545-0.jpg'); }
+.carousel-image-6 { background-image: url('https://pbs.twimg.com/media/EWx6vS4U4AA7Ty-?format=jpg&name=4096x4096'); }
+.carousel-image-7 { background-image: url('https://s359.kapook.com/pagebuilder/a85ea7a0-1fef-4b80-bcfa-5b38fc52f271.jpg'); }
+.carousel-image-8 { background-image: url('https://img.kapook.com/u/2023/sutasinee/12/p3.jpg'); }
+
+
+/* -------------------------------------- */
+/* 3. Modal & Button Styling */
+/* -------------------------------------- */
+
+.modal-footer .btn-success {
+    background-color: var(--color-primary-green);
+    border-color: var(--color-primary-green);
+}
+
+.modal-footer .btn-success:hover {
+    background-color: var(--color-dark-green);
+    border-color: var(--color-dark-green);
+}
+
+/* -------------------------------------- */
+/* 4. Places to Visit (Card Section) Styling (New) */
+/* -------------------------------------- */
+
+#places {
+    padding: 60px 0;
+}
+
+#places h2 {
+    color: var(--color-primary-green); /* สีเขียวเข้มสำหรับหัวข้อหลัก */
+    font-weight: 700;
+}
+
+/* สไตล์พื้นฐานของ Card */
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* ยก Card ขึ้นเล็กน้อยเมื่อโฮเวอร์ */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* เงาที่ชัดเจนขึ้น */
+}
+
+/* จัดการรูปภาพใน Card */
+.card-img-top {
+    height: 200px; /* กำหนดความสูงคงที่สำหรับรูปภาพ */
+    object-fit: cover; /* ครอบตัดรูปภาพให้เต็มพื้นที่โดยไม่เสียสัดส่วน */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #333  ;
+}
+
+/* ปรับแต่งปุ่ม Card ให้ใช้สีที่กำหนด */
+.btn-outline-success {
+    color: var(--color-primary-green);
+    border-color: var(--color-primary-green);
+}
+.btn-outline-success:hover {
+    background-color: var(--color-primary-green);
+    color: var(--color-text-white);
+}
+
+.btn-outline-success {
+    color: var(--color-primary-green);
+    border-color: var(--color-primary-green);
+}
+.btn-outline-info:hover {
+    background-color: var(--color-primary-green);
+    color: var(--color-text-white);
+}
+
+.btn-outline-success {
+    color: var(--color-primary-green);
+    border-color: var(--color-primary-green);
+}
+.btn-outline-warning:hover {
+    background-color: var(--color-primary-green);
+    color: #333; 
+}
+
+.btn-outline-success {
+    color: var(--color-primary-green);
+    border-color: var(--color-primary-green);
+}
+.btn-outline-secondary:hover {
+    background-color: var(--color-primary-green);
+    color: var(--color-text-white);
+}
+
+/* -------------------------------------- */
+/* 5. About Section Styling */
+/* -------------------------------------- */
+#about {
+    background-color: #f8f9fa; /* สีพื้นหลังอ่อนๆ */
+}
+#about h2 {
+    color: #28a745; 
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+/* 6. Footer Styling (อิงตาม class ที่คุณให้มา) */
+
+.footer-custom {
+    margin-top: auto; 
+    padding: 20px 0;
+    background-color: var(--color-dark-green);
+    color: var(--color-text-white);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+    /* ปรับความสูงของ Carousel ให้สั้นลงบนมือถือ */
+    .carousel-item {
+        height: 60vh; 
+    }
+
+    /* ปรับขนาดข้อความ Carousel Caption  */
+    .carousel-caption {
+        max-width: 90%;
+        margin-left: 5%;
+        padding: 10px;
+    }
+
+    .carousel-caption h1,
+    .carousel-caption h2,
+    .carousel-caption h3 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        display: none; 
+    }
+}

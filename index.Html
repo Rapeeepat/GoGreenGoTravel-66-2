@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>GoGreenGoTravel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-custom fixed-top">
+    <div class="container">
+        <a href="index.Html" class="navbar-brand">GoGreenGoTravel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="#" class="nav-link">หน้าแรก</a></li>
+                <li class="nav-item"><a href="#places" class="nav-link">สถานที่ท่องเที่ยว</a></li>
+                <li class="nav-item"><a href="https://www.agoda.com/country/thailand.html?site_id=1919571&tag=00868576-b8ac-4ba2-bfc7-ca5e152dc3ce&gad_source=1&gad_campaignid=20791370807&gbraid=0AAAAAD-GdVmHxzlpkN7IK3fgWsuVrJw6v&device=c&network=g&adid=744965192526&rand=13250230941042522501&aud=kwd-1686555076713&gclid=CjwKCAiAz_DIBhBJEiwAVH2XwEJf_p-QOOWHdrW7zCGW6DLM5KXykXF3p1iOpZNcvQXNDEhC39sMtRoC7PwQAvD_BwE&checkIn=2025-11-24&checkOut=2025-11-25&adults=2&rooms=1&pslc=1&ds=WkCF5fQt2T%2FazppB" class="nav-link">จองห้องพัก</a></li> 
+                <li class="nav-item"><a href="https://nps.dnp.go.th/index.php" class="nav-link">อุทยานแห่งชาติ</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">เกี่ยวกับเรา</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">ติดต่อเรา</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+ 
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog"> 
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">ติดต่อเรา</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group mb-3">
+                        <label for="contactEmail">E-mail</label>
+                        <input type="email" class="form-control" id="contactEmail" placeholder="กรุณากรอกอีเมลของคุณ">
+                    </div>
+                    <div class="form-group mb-3"> 
+                        <label for="contactName">ชื่อ-นามสกุล</label>
+                        <input type="text" class="form-control" id="contactName" placeholder="กรุณากรอกชื่อของคุณ">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="contactSubject">เรื่องที่จะติดต่อ</label>
+                        <input type="text" class="form-control" id="contactSubject" placeholder="หัวข้อของคุณ">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="contactDetail">รายละเอียด</label>
+                        <textarea class="form-control" id="contactDetail" rows="6" cols="30"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">ยกเลิก</button> 
+                <button type="submit" class="btn btn-success">ส่งข้อมูล</button> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="slider">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active carousel-image-1">
+                <div class="container">
+                    <div class="carousel-caption d-none d-md-block text-start">
+                        <h1>อุทยานแห่งชาติภูกระดึง</h1>
+                        <p>สุดยอดสถานที่เดินป่าสัมผัสอากาศหนาว</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image-2">
+                <div class="container">
+                    <div class="carousel-caption d-none d-md-block text-end">
+                        <h2>ดอยอินทนนท์</h2>
+                        <p>ยอดเขาที่สูงที่สุดในประเทศไทย ชมทะเลหมอกและกิ่วแม่ปาน</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image-3">
+                <div class="container">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>อุทยานแห่งชาติเขาใหญ่</h3>
+                        <p>มรดกโลกที่อุดมสมบูรณ์ ชมสัตว์ป่าและน้ำตก</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image-4">
+                <div class="container">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>อุทยานแห่งชาติเขาสก</h3>
+                        <p>กุ้ยหลินเมืองไทย ล่องเรือในเขื่อนเชี่ยวหลาน</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image-5">
+                <div class="container">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>น้ำตกผาตาด (กาญจนบุรี)</h3>
+                        <p>น้ำตกที่มีความสวยงามลดหลั่นกันไปถึง 3 ชั้น มีน้ำมากในช่วงปลายฤดูฝน บรรยากาศร่มรื่น มีต้นไม้ปกคลุมอยู่ทั่วบริเวณ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image-6">
+                <div class="container">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>สวนป่าดอยบ่อหลวง (เชียงใหม่)</h3>
+                        <p>สถานที่พักผ่อนท่ามกลางป่าสนสูงใหญ่ที่เรียงรายอย่างเป็นระเบียบ สร้างบรรยากาศคล้ายอยู่ยุโรป มีอากาศเย็นสบายตลอดปี</p>
+                    </div>
+                </div>
+            </div>
+             <div class="carousel-item carousel-image-7">
+                <div class="container">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>ทองผาภูมิ (กาญจนบุรี)</h3>
+                        <p>ดินแดนแห่งขุนเขา น้ำตก และสายหมอก — สัมผัสธรรมชาติบริสุทธิ์กลางหุบเขากาญจนบุรี</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item carousel-image-8">
+                <div class="container">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>ภูชี้ฟ้า (เชียงราย)</h3>
+                        <p>แตะขอบฟ้า ชมทะเลหมอกที่ภูชี้ฟ้า — เสน่ห์เหนือฟ้าที่ต้องไปสัมผัสสักครั้ง</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<section id="places" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">สถานที่ท่องเที่ยวเชิงธรรมชาติแนะนำ</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            
+            <div class="col">
+                <div class="card h-100 shadow-sm border-success">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%882.jpg" class="card-img-top" alt="อุทยานแห่งชาติเขาใหญ่">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">อุทยานแห่งชาติเขาใหญ่</h5>
+                        <p class="card-text">อุทยานแห่งชาติแห่งแรกของไทยและมรดกโลกทางธรรมชาติ ใกล้กรุงเทพฯ เป็นแหล่งดูนกและสัตว์ป่า รวมถึงน้ำตกเหวนรกที่มีชื่อเสียง</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a href="http://127.0.0.1:5500/Project_p3.html" class="btn btn-outline-success w-100">รายละเอียดเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-success">
+                    <img src="https://f.tpkcdn.com/images-720/91ea1c498a3fe709ec8c4ed6e55d9ba2.jpg" class="card-img-top" alt="อุทยานแห่งชาติเขาสก">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">อุทยานแห่งชาติเขาสก</h5>
+                        <p class="card-text">สวรรค์ของคนรักป่าและน้ำ ที่มีเขื่อนเชี่ยวหลาน หรือ "กุ้ยหลินเมืองไทย" ล้อมรอบด้วยภูเขาหินปูนงดงาม เหมาะกับการล่องเรือและพักแพ</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a href="http://127.0.0.1:5500/Project_p4.html" class="btn btn-outline-success w-100">รายละเอียดเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-success">
+                    <img src="https://kanchanaburi.center/wp-content/uploads/2022/09/E9590545-0.jpg" class="card-img-top" alt="ทุ่งโปรงทอง">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">น้ำตกผาตาด (กาญจนบุรี)</h5>
+                        <p class="card-text">น้ำตกที่มีความสวยงามลดหลั่นกันไปถึง 3 ชั้น มีน้ำมากในช่วงปลายฤดูฝน บรรยากาศร่มรื่น มีต้นไม้ปกคลุมอยู่ทั่วบริเวณ</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a href="http://127.0.0.1:5500/Project_p9.html" class="btn btn-outline-success w-100">รายละเอียดเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-success">
+                    <img src="https://www.thetravel2gether.com/wp-content/uploads/2022/04/doiboluang-15-scaled.jpg" class="card-img-top" alt="สวนป่าดอยบ่อหลวง">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">สวนป่าดอยบ่อหลวง (เชียงใหม่)</h5>
+                        <p class="card-text">สถานที่พักผ่อนท่ามกลางป่าสนสูงใหญ่ที่เรียงรายอย่างเป็นระเบียบ สร้างบรรยากาศคล้ายอยู่ยุโรป มีอากาศเย็นสบายตลอดปี</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a href="http://127.0.0.1:5500/Project_p8.html" class="btn btn-outline-success w-100">รายละเอียดเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100 shadow-sm border-success">
+                    <img src="https://f.ptcdn.info/327/039/000/o137ziarxj8Z5DVhd4z-o.jpg" class="card-img-top" alt="ทองผาภูมิ (กาญจนบุรี)"> 
+                    <div class="card-body">
+                        <h5 class="card-title text-success">ทองผาภูมิ (กาญจนบุรี)</h5>
+                        <p class="card-text">ดินแดนแห่งขุนเขา น้ำตก และสายหมอก — สัมผัสธรรมชาติบริสุทธิ์กลางหุบเขากาญจนบุรี ที่ทั้งงดงามและสงบ</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a href="http://127.0.0.1:5500/Project_p5.html" class="btn btn-outline-success w-100">รายละเอียดเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm border-success">
+                    <img src="https://img.kapook.com/u/2023/sutasinee/12/p10.jpg" class="card-img-top" alt="ภูชี้ฟ้า (เชียงราย)">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">ภูชี้ฟ้า (เชียงราย)</h5>
+                        <p class="card-text">ยอดเขาสูงแตะขอบฟ้า จุดชมพระอาทิตย์ขึ้นเหนือทะเลหมอกสุดอลังการแห่งเชียงราย ที่ใครได้มาสักครั้งก็จะหลงรักในเสน่ห์ของขุนเขา</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a href="http://127.0.0.1:5500/Project_p7.html" class="btn btn-outline-success w-100">รายละเอียดเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col">
+                <div class="card h-100 shadow-sm border-success">
+                    <img src="https://img.kapook.com/u/2019/Tanapol/travel/august/phukadeung/p7.jpg" class="card-img-top" alt="อุทยานแห่งชาติภูกระดึง"> 
+                    <div class="card-body">
+                        <h5 class="card-title text-success">อุทยานแห่งชาติภูกระดึง</h5>
+                        <p class="card-text">ยอดเขาแห่งตำนานที่ท้าทายหัวใจนักเดินทาง สัมผัสทะเลหมอกยามเช้า และดวงดาวเต็มฟ้ายามค่ำคืน — ความเหนื่อยล้าที่คุ้มค่า</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a href="http://127.0.0.1:5500/Project_p2.html" class="btn btn-outline-success w-100">รายละเอียดเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100 shadow-sm border-success">
+                    <img src="https://www.expedia.co.th/stories/wp-content/uploads/2022/07/1.%E0%B8%94%E0%B8%AD%E0%B8%A2%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%8A%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%94%E0%B8%B2%E0%B8%A7-1.jpg" class="card-img-top" alt="ดอยอินทนนท์">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">ดอยอินทนนท์</h5>
+                        <p class="card-text">ยอดดอยที่สูงที่สุดในประเทศไทย สัมผัสอากาศเย็นตลอดปี เดินชมธรรมชาติ น้ำตก และทะเลหมอกยามเช้า — ความงดงามเหนือระดับ</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a href="http://127.0.0.1:5500/Project_p6.html" class="btn btn-outline-success w-100">รายละเอียดเพิ่มเติม</a>
+                    </div>
+                </div>
+            </div>
+
+        </div> </div> </section>
+
+<section id="about" class="p-5">
+    <div class="container pt-5 text-center">
+        <h2 class="text-success">เกี่ยวกับ GoGreenGoTravel</h2>
+        <p class="fs-5">GoGreenGoTravel คือพื้นที่ออนไลน์สำหรับคนรักธรรมชาติ ที่อยากออกเดินทางอย่างรับผิดชอบและใส่ใจสิ่งแวดล้อม เรารวบรวมเรื่องราว สถานที่ และแรงบันดาลใจในการท่องเที่ยวเชิงอนุรักษ์จากทั่วประเทศไทย เพื่อให้ทุกการเดินทางของคุณ “เขียว” และ “มีคุณค่า” มากกว่าที่เคย
+
+เรามุ่งมั่นที่จะส่งเสริมการท่องเที่ยวอย่างยั่งยืน (Sustainable Travel)โดยสนับสนุนแหล่งท่องเที่ยวชุมชน ทรัพยากรธรรมชาติ และวัฒนธรรมท้องถิ่นให้คงอยู่ต่อไปอย่างสมดุล ทั้งต่อผู้คน สัตว์ป่า และสิ่งแวดล้อมรอบตัว</p>
+    </div>
+</section>
+<footer class="footer-custom">
+    <div class="container">
+        <p class="mb-0">© 2025 GoGreenGoTravel. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

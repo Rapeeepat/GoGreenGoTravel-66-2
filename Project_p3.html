@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>GoGreenGoTravel | อุทยานแห่งชาติภูกระดึง</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+    <link rel="stylesheet" href="Project_p3.css"> 
+    </head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-custom fixed-top">
+    <div class="container">
+        <a href="Project_index.Html" class="navbar-brand">GoGreenGoTravel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="Project_index.Html" class="nav-link">หน้าแรก</a></li>
+                <li class="nav-item"><a href="Project_index.Html#places" class="nav-link">สถานที่ท่องเที่ยว</a></li>
+                <li class="nav-item"><a href="https://www.khaoyainationalpark.com/" class="nav-link">บทความ</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">เกี่ยวกับเรา</a></li>
+                <li class="nav-item"><a href="https://nps.dnp.go.th/index.php" class="nav-link">อุทยานแห่งชาติ</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">ติดต่อเรา</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog"> 
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">ติดต่อเรา</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group mb-3">
+                        <label for="contactEmail">E-mail</label>
+                        <input type="email" class="form-control" id="contactEmail" placeholder="กรุณากรอกอีเมลของคุณ">
+                    </div>
+                    <div class="form-group mb-3"> 
+                        <label for="contactName">ชื่อ-นามสกุล</label>
+                        <input type="text" class="form-control" id="contactName" placeholder="กรุณากรอกชื่อของคุณ">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="contactSubject">เรื่องที่จะติดต่อ</label>
+                        <input type="text" class="form-control" id="contactSubject" placeholder="หัวข้อของคุณ">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="contactDetail">รายละเอียด</label>
+                        <textarea class="form-control" id="contactDetail" rows="6" cols="30"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">ยกเลิก</button> 
+                <button type="submit" class="btn btn-success">ส่งข้อมูล</button> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="slider">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-slabel="Slide 3"></button>
+             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active detail-image-1">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item detail-image-2">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item detail-image-3">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item detail-image-4">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<section id="detail" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h3 class="display-5 text-success mb-4">ข้อมูลการเดินทางและแนะนำกิจกรรม</h3>
+                <p class="lead">อุทยานแห่งชาติเขาใหญ่ มีเนื้อที่ 2,165 ตารางกิโลเมตร ครอบคลุมพื้นที่ 4 จังหวัด ได้แก่ นครนายก นครราชสีมา ปราจีนบุรี และสระบุรี ภูมิประเทศประกอบด้วยป่าดิบ ป่าโปร่ง น้ำตก สัตว์ป่าและไม้ป่านานาชนิด ยอดเขาที่สูงที่สุด คือยอดเขาแหลม มีความสูงจากระดับน้ำทะเล 1,292 เมตร เป็นอุทยานแห่งชาติแห่งแรกของประเทศไทย และองค์กรยูเนสโก ประกาศให้เป็นมรดกโลกเมื่อวันที่ 14 กรกฎาคม 2548 สถานที่ท่องเที่ยวภายในอุทยานฯ น้ำตกเหวนรก อยู่ทิศใต้ของอุทยานฯ จากด่านเนินหอมไป 8 กิโลเมตรเลี้ยวซ้ายตรงหลักกิโลเมตรที่ 24 จากนั้นต้องเดินเท้าไปน้ำตกเหวนรกอีก 1 กิโลเมตรเป็นน้ำตกขนาดใหญ่ 3 ชั้น ความสูง 150 เมตร ลักษณะการไหลของน้ำตกเป็นแบบ 90 องศา สู่แอ่งน้ำเบื้องล่างต้องระวังการเที่ยวชมในช่วงฤดูฝนเพราะน้ำไหลแรงมาก น้ำตกผากล้วยไม้ อยู่บนถนนธนะรัชต์ เป็นน้ำตกขนาดกลาง ที่หน้าผาของน้ำตกมีกล้วยไม้หวายแดงขึ้นอยู่เป็นจำนวนมาก น้ำตกเหวสุวัต อยู่ปลายสุดของถนนธนะรัชต์เกิดจากห้วยลำตะคองไหลตกจากหน้าผาสูง 25 เมตร ในฤดูฝนมีน้ำ ไหลเชี่ยว น้ำตกเหวไทร เป็นน้ำตกที่เกิดจากห้วยลำตะคองไหลลงมาจากหน้าผาสูง 5 เมตร ต้องเดินเท้าจากน้ำตกเหวสุวัตระยะทาง 1.5 กิโลเมตร น้ำตกกองแก้ว เป็นน้ำตกขนาดเล็กที่เกิดจากห้วยลำตะคอง อยู่ห่างจากที่ทำการอุทยานฯ 100 เมตร ใกล้น้ำตกมีสะพานแขวนข้ามห้วยลำตะคองซึ่งแนวแบ่งเขตจังหวัดนครนายก และจังหวัดนครราชสีมา นอกจากนี้ภายในอุทยานฯ ยังมีกิจกรรมที่น่าสนใจเช่น กิจกรรมแคมปิ้ง เดินป่าท่องไพร จักรยานท่องเที่ยว ส่องสัตว์ เป็นต้น</p>
+                
+                <hr>
+
+                <h4>ข้อมูลเบื้องต้น</h4>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <p><strong>ที่ตั้ง:</strong> ตำบลหมูสี อำเภอปากช่อง จังหวัดนครราชสีมา</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>อุณหภูมิเฉลี่ย:</strong> 21 °C </p>
+                        <p><strong>ระดับความท้าทาย:</strong> สูง การเดินป่าระยะไกล หรือเส้นทางที่ต้องใช้ความชำนาญและสภาพร่างกายที่แข็งแรง </p>
+                    </div>
+                </div>
+                
+                <h4>กิจกรรมห้ามพลาด</h4>
+                <ul>
+                    <li>ชมธรรมชาติและสัตว์ป่า: เดินป่า, ดูดาว, หอดูสัตว์หนองผักชี</li>
+                    <li>ผจญภัย: ขับ ATV, ขี่ม้า, โหนสลิง, เล่นสวนน้ำที่ Scenical World</li>
+                    <li>เยี่ยมชมฟาร์ม: ฟาร์มโชคชัย, PB Valley, My Ozone Animal Club, Hokkaido Flower Park</li>
+                    <li>สัมผัสวัฒนธรรมและชิลล์ : เดินตลาดกลางคืน, สวนศิลปะ </li>
+                </ul>
+
+                <h4>ข้อกำหนดสำคัญและการเตรียมตัว</h4>
+                <blockquote class="blockquote alert alert-warning">
+                    <p class="mb-2">การจองห้องพักและพื้นที่กลางเต๊นท์ต้องมีการ จองล่วงหน้า ผ่านระบบของอุทยานแห่งชาติเท่านั้น </p>
+                    <p class="mb-0">อัตราค่าบริการ: ชาวไทย ผู้ใหญ่ 40 บาท เด็ก 20 บาท ชาวต่างชาติ ผู้ใหญ่ 400 บาท เด็ก 200 บาท</p>
+                    <p class="mb-0">อัตราค่าบริการ: รถจักรยานยนต์ 20 บาท/คัน, รถยนต์ 4 ล้อ 30 บาท/คัน, รถยนต์ 6 ล้อ 100 บาท/คัน, และ รถยนต์มากกว่า 6 ล้อ 200 บาท/คัน</p>
+                    <p class="mb-0">หมายเหตุ: เมื่อชำระค่าบริการเข้าอุทยานแห่งชาติแล้ว กรุณาพกบัตรค่าบริการติดตัวขณะท่องเที่ยวในอุทยานแห่งชาติเพื่อการตรวจสอบ</p>
+                </blockquote>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <div class="card p-4 shadow-lg booking-box bg-light">
+                    <h4 class="card-title text-center text-success mb-4">วางแผนและจองทันที</h4>
+                    
+                    <a href="https://khaoyainationalpark.com/plan-your-visit/staying" target="_blank" class="btn btn-success btn-lg mb-3">
+                        <i class="bi bi-box-arrow-in-right"></i> จองห้องพัก/เต็นท์
+                    </a>
+                    
+                    <a href="https://maps.app.goo.gl/HyQuG1MqFKR6Seh16" target="_blank" class="btn btn-outline-secondary btn-lg mb-4">
+                        <i class="bi bi-geo-alt-fill"></i> ดู Location (Google Maps)
+                    </a>
+
+                    <div class="text-center small text-muted border-top pt-3">
+                        <p class="mb-1">โทรศัพท์สอบถามอุทยานแห่งชาติเขาใหญ่ 086-092-6529</p>
+                        <p>เวลาทำการ 08:30 - 18:00 น </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="slider">
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/3-fT6lfK3gM?autoplay=1&mute=1&loop=1&playlist=3-fT6lfK3gM&controls=0&modestbranding=1&rel=0" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media" 
+            allowfullscreen>
+        </iframe>
+    </div>
+    </section>
+
+<section id="about" class="p-5 bg-white">
+    <div class="container pt-5 text-center">
+        <h2 class="text-success">เกี่ยวกับ GoGreenGoTravel</h2>
+        <p class="fs-5">GoGreenGoTravel คือพื้นที่ออนไลน์สำหรับคนรักธรรมชาติ ที่อยากออกเดินทางอย่างรับผิดชอบและใส่ใจสิ่งแวดล้อม เรารวบรวมเรื่องราว สถานที่ และแรงบันดาลใจในการท่องเที่ยวเชิงอนุรักษ์จากทั่วประเทศไทย เพื่อให้ทุกการเดินทางของคุณ “เขียว” และ “มีคุณค่า” มากกว่าที่เคย
+
+เรามุ่งมั่นที่จะส่งเสริมการท่องเที่ยวอย่างยั่งยืน (Sustainable Travel) โดยสนับสนุนแหล่งท่องเที่ยวชุมชน ทรัพยากรธรรมชาติ และวัฒนธรรมท้องถิ่นให้คงอยู่ต่อไปอย่างสมดุล ทั้งต่อผู้คน สัตว์ป่า และสิ่งแวดล้อมรอบตัว</p>
+    </div>
+</section>
+
+<footer class="footer-custom">
+    <div class="container">
+        <p class="mb-0">© 2025 GoGreenGoTravel. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

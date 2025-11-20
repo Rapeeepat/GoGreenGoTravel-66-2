@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>GoGreenGoTravel | น้ำตกผาตาด (กาญจนบุรี)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+    <link rel="stylesheet" href="Project_p9.css"> 
+    </head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-custom fixed-top">
+    <div class="container">
+        <a href="Project_index.Html" class="navbar-brand">GoGreenGoTravel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a href="Project_index.Html" class="nav-link">หน้าแรก</a></li>
+                <li class="nav-item"><a href="Project_index.Html#places" class="nav-link">สถานที่ท่องเที่ยว</a></li>
+                <li class="nav-item"><a href="https://portal.dnp.go.th/Content/nationalpark?contentId=1750" class="nav-link">บทความ</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">เกี่ยวกับเรา</a></li>
+                <li class="nav-item"><a href="https://nps.dnp.go.th/index.php" class="nav-link">อุทยานแห่งชาติ</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">ติดต่อเรา</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog"> 
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">ติดต่อเรา</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group mb-3">
+                        <label for="contactEmail">E-mail</label>
+                        <input type="email" class="form-control" id="contactEmail" placeholder="กรุณากรอกอีเมลของคุณ">
+                    </div>
+                    <div class="form-group mb-3"> 
+                        <label for="contactName">ชื่อ-นามสกุล</label>
+                        <input type="text" class="form-control" id="contactName" placeholder="กรุณากรอกชื่อของคุณ">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="contactSubject">เรื่องที่จะติดต่อ</label>
+                        <input type="text" class="form-control" id="contactSubject" placeholder="หัวข้อของคุณ">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="contactDetail">รายละเอียด</label>
+                        <textarea class="form-control" id="contactDetail" rows="6" cols="30"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">ยกเลิก</button> 
+                <button type="submit" class="btn btn-success">ส่งข้อมูล</button> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="slider">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-slabel="Slide 3"></button>
+             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active detail-image-1">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item detail-image-2">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item detail-image-3">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item detail-image-4">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item detail-image-5">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<section id="detail" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h3 class="display-5 text-success mb-4">ข้อมูลการเดินทางและแนะนำกิจกรรม</h3>
+                <p class="lead">น้ำตกผาตาดตั้งอยู่ทางด้านทิศตะวันตกของอุทยานแห่งชาติเขื่อนศรีนครินทร์ เกิดจากลำห้วยเล็กๆ บริเวณเทือกเขากะลาไหลลงมารวมเป็นห้วยกุยมั่งและไหลบ่ามาเป็นน้ำตกผาตาด ได้ชื่อว่ามีความสวยงามที่สุดแห่งหนึ่งของจังหวัดกาญจนบุรี โดยเฉพาะในช่วงฤดูฝน น้ำตกแห่งนี้ไหลลงสู่แม่น้ำแควน้อยใต้เขื่อนเขาแหลม</p>
+                
+                <hr>
+
+                <h4>ข้อมูลเบื้องต้น</h4>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <p><strong>ที่ตั้ง:</strong> ตำบลนินดาด อำเภอทองผาภูมิ จังหวัดกาญจนบุรี</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>อุณหภูมิเฉลี่ย:</strong> อยู่ระหว่าง 19 องศา ถึง 33 องศา</p>
+                        <p><strong>ระดับความท้าทาย:</strong> ระดับ ง่าย-ปานกลาง โดยส่วนใหญ่จะเน้นการเดินชมวิวธรรมชาติที่สวยงาม ไม่ได้มีเส้นทางที่ปีนป่ายหรือผจญภัยที่ยากลำบากมากนัก  </p>
+                    </div>
+                </div>
+                
+                <h4>กิจกรรมห้ามพลาด</h4>
+                <ul>
+                    <li>เล่นน้ำ: สามารถลงเล่นน้ำได้ตามชั้นต่าง ๆ ของน้ำตก ซึ่งมีหลายมุมให้เลือกพักผ่อน แต่บริเวณชั้น 3 มีข้อกำหนดให้ผู้ที่จะลงเล่นต้องสวมชูชีพเพื่อความปลอดภัย</li>
+                    <li>กางเต็นท์: มีลานกางเต็นท์ที่อยู่ติดกับลำธารชั้น 1 สำหรับผู้ที่ต้องการพักค้างคืนใกล้ชิดธรรมชาติ มีค่าบริการ 30 บาท</li>
+                    <li>เดินชมและถ่ายภาพ: บรรยากาศรอบๆ น้ำตกมีความร่มรื่น เต็มไปด้วยต้นไม้ เหมาะแก่การเดินเล่นเพื่อชมทิวทัศน์และถ่ายรูป</li>
+                    <li>สัมผัสธรรมชาติ: อากาศเย็นสบาย ชื่นชมวิวป่าสนที่สวยงามและสูดอากาศบริสุทธิ์ได้เต็มที่ </li>
+                </ul>
+
+                <h4>ข้อกำหนดสำคัญและการเตรียมตัว</h4>
+                <blockquote class="blockquote alert alert-warning">
+                    <p class="mb-2">การจองห้องพักและพื้นที่กลางเต๊นท์ต้องมีการ จองล่วงหน้า ผ่านระบบของอุทยานเท่านั้น </p>
+                    <p class="mb-0">อัตราค่าบริการ: ค่าธรรมเนียม/อัตราค่าเข้าชม ชาวไทย ผู้ใหญ่ 100 บาท เด็ก 50 บาท ชาวต่างชาติ ผู้ใหญ่ 300 บาท เด็ก 200 บาท  </p>
+                    <p class="mb-0">หมายเหตุ: เมื่อชำระค่าบริการเข้าอุทยานแล้ว กรุณาพกบัตรค่าบริการติดตัวขณะท่องเที่ยวในอุทยานแห่งชาติเพื่อการตรวจสอบ</p>
+                </blockquote>
+            </div>
+
+            <div class="col-lg-4 mt-4 mt-lg-0">
+                <div class="card p-4 shadow-lg booking-box bg-light">
+                    <h4 class="card-title text-center text-success mb-4">วางแผนและจองทันที</h4>
+                    
+                    <a href="https://www.agoda.com/th-th/hotels-near-pha-tad-waterfall/attractions/kanchanaburi-th.html?cid=1844104&ds=YlWPdUDXR83NgHWR" target="_blank" class="btn btn-success btn-lg mb-3">
+                        <i class="bi bi-box-arrow-in-right"></i> จองห้องพัก
+                    </a>
+                    
+                    <a href="https://maps.app.goo.gl/2U2Y3rCSbcPhCWAx5" target="_blank" class="btn btn-outline-secondary btn-lg mb-4">
+                        <i class="bi bi-geo-alt-fill"></i> ดู Location (Google Maps)
+                    </a>
+
+                    <div class="text-center small text-muted border-top pt-3">
+                        <p class="mb-1">โทรศัพท์สอบถามที่ทำการอุทยานน้ำตกผาตาด  032 540 316</p>
+                        <p>น้ำตกผาตาด เปิดให้บริการนักท่องเที่ยวและประชาชนทุกวันระหว่างเวลา 08.30 - 16.30 น.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="slider">
+<div class="video-container">
+ <iframe 
+ src="https://www.youtube.com/embed/zIZlESC1yVs" 
+ frameborder="0" 
+ allow="autoplay; encrypted-media" 
+ allowfullscreen>
+ </iframe>
+ </div>
+</section>
+
+<section id="about" class="p-5 bg-white">
+    <div class="container pt-5 text-center">
+        <h2 class="text-success">เกี่ยวกับ GoGreenGoTravel</h2>
+        <p class="fs-5">GoGreenGoTravel คือพื้นที่ออนไลน์สำหรับคนรักธรรมชาติ ที่อยากออกเดินทางอย่างรับผิดชอบและใส่ใจสิ่งแวดล้อม เรารวบรวมเรื่องราว สถานที่ และแรงบันดาลใจในการท่องเที่ยวเชิงอนุรักษ์จากทั่วประเทศไทย เพื่อให้ทุกการเดินทางของคุณ “เขียว” และ “มีคุณค่า” มากกว่าที่เคย
+
+เรามุ่งมั่นที่จะส่งเสริมการท่องเที่ยวอย่างยั่งยืน (Sustainable Travel) โดยสนับสนุนแหล่งท่องเที่ยวชุมชน ทรัพยากรธรรมชาติ และวัฒนธรรมท้องถิ่นให้คงอยู่ต่อไปอย่างสมดุล ทั้งต่อผู้คน สัตว์ป่า และสิ่งแวดล้อมรอบตัว</p>
+    </div>
+</section>
+
+<footer class="footer-custom">
+    <div class="container">
+        <p class="mb-0">© 2025 GoGreenGoTravel. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html> 

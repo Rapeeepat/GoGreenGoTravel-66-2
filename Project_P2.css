@@ -1,0 +1,234 @@
+
+:root {
+    --color-primary-green: #28a745; /* เขียวเข้ม (Navbar, Success) */
+    --color-dark-green: #1e7e34; /* เขียวเข้มกว่า (Border) */
+    --color-highlight-yellow: #ffc107; /* เหลืองทอง (Hover) */
+    --color-info-blue: #17a2b8; /* ฟ้า Info */
+    --color-warning-orange: #ffc107; /* เหลือง Warning */
+    --color-secondary-gray: #6c757d; /* เทา Secondary */
+    --color-text-light: #555; /* สีข้อความปกติ */
+    --color-text-white: #ffffff;
+}
+
+/* -------------------------------------- */
+/* 1. Global Styles & Navbar Customization */
+/* -------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Kanit", sans-serif;
+    padding-top: 56px; 
+}
+
+/* ปรับแต่ง Navbar ให้เป็นสีเขียวตามธีม */
+.navbar-custom {
+    background-color: var(--color-primary-green);
+    border-bottom: 3px solid var(--color-dark-green);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: var(--color-text-white);
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--color-highlight-yellow);
+}
+
+/* -------------------------------------- */
+/* 2. Carousel (Hero Section) Styling */
+/* -------------------------------------- */
+
+#slider {
+    padding: 0;
+    margin-top: 0;
+}
+ 
+.carousel-item {
+    height: 100vh;
+    min-height: 400px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+}
+
+.carousel-caption {
+    display: none !important; 
+}
+
+
+.detail-image-1 { 
+    background-image: url('https://img.kapook.com/u/2019/Tanapol/travel/august/phukadeung/p1.jpg'); 
+}
+.detail-image-2 { 
+    background-image: url('https://www.ananda.co.th/blog/thegenc/wp-content/uploads/2023/11/shutterstock_1012945519-1-823x550.jpg'); 
+}
+.detail-image-3 { 
+    background-image: url('https://static.thairath.co.th/media/BUCz3kW7pmsIQUeyCdlrhk1YdyTHI4DCIS0m5LUsVDo0BhT7qxnp3N5CM.jpg'); 
+}
+.detail-image-4 { 
+    background-image: url('https://www.dasta.or.th/uploads/article/202107/1625238812_bf3b710888a73246b84a.jpg'); 
+}
+
+/* -------------------------------------- */
+/* 3. Modal & Button Styling */
+/* -------------------------------------- */
+
+.modal-footer .btn-success {
+    background-color: var(--color-primary-green);
+    border-color: var(--color-primary-green);
+}
+
+.modal-footer .btn-success:hover {
+    background-color: var(--color-dark-green);
+    border-color: var(--color-dark-green);
+}
+
+/* -------------------------------------- */
+/* 4. Places to Visit (Card Section) Styling (New) */
+/* -------------------------------------- */
+
+#places {
+    padding: 60px 0;
+}
+
+#places h2 {
+    color: var(--color-primary-green); /* สีเขียวเข้มสำหรับหัวข้อหลัก */
+    font-weight: 700;
+}
+
+/* สไตล์พื้นฐานของ Card */
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* ยก Card ขึ้นเล็กน้อยเมื่อโฮเวอร์ */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* เงาที่ชัดเจนขึ้น */
+}
+
+/* จัดการรูปภาพใน Card */
+.card-img-top {
+    height: 200px; /* กำหนดความสูงคงที่สำหรับรูปภาพ */
+    object-fit: cover; /* ครอบตัดรูปภาพให้เต็มพื้นที่โดยไม่เสียสัดส่วน */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+}
+
+/* ปรับแต่งปุ่ม Card ให้ใช้สีที่กำหนด */
+.btn-outline-success {
+    color: var(--color-primary-green);
+    border-color: var(--color-primary-green);
+}
+.btn-outline-success:hover {
+    background-color: var(--color-primary-green);
+    color: var(--color-text-white);
+}
+
+.btn-outline-info {
+    color: var(--color-info-blue);
+    border-color: var(--color-info-blue);
+}
+.btn-outline-info:hover {
+    background-color: var(--color-info-blue);
+    color: var(--color-text-white);
+}
+
+.btn-outline-warning {
+    color: var(--color-highlight-yellow);
+    border-color: var(--color-highlight-yellow);
+}
+.btn-outline-warning:hover {
+    background-color: var(--color-highlight-yellow);
+    color: #333; /* ใช้สีเข้มเพื่อให้ข้อความอ่านง่ายบนพื้นเหลือง */
+}
+
+.btn-outline-secondary {
+    color: var(--color-secondary-gray);
+    border-color: var(--color-secondary-gray);
+}
+.btn-outline-secondary:hover {
+    background-color: var(--color-secondary-gray);
+    color: var(--color-text-white);
+}
+
+/* -------------------------------------- */
+/* 5. About Section Styling */
+/* -------------------------------------- */
+#about {
+    background-color: #f8f9fa; /* สีพื้นหลังอ่อนๆ */
+}
+#about h2 {
+    color: #28a745; 
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* -------------------------------------- */
+/* 6. Footer Styling (อิงตาม class ที่คุณให้มา) */
+/* -------------------------------------- */
+
+.footer-custom {
+    margin-top: auto; 
+    padding: 20px 0;
+    background-color: var(--color-dark-green); /* ใช้ Dark Green */ 
+    color: var(--color-text-white);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+/* -------------------------------------- */
+/* 7. Responsive Design (Media Queries) */
+/* -------------------------------------- */
+
+@media (max-width: 768px) {
+    /* ปรับความสูงของ Carousel ให้สั้นลงบนมือถือ */
+    .carousel-item {
+        height: 60vh; 
+    }
+
+    /* ปรับขนาดข้อความ Carousel Caption ให้เล็กลง */
+    .carousel-caption {
+        max-width: 90%;
+        margin-left: 5%;
+        padding: 10px;
+    }
+
+    .carousel-caption h1,
+    .carousel-caption h2,
+    .carousel-caption h3 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption p {
+        display: none; 
+    }
+}
